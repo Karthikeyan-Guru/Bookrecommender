@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommender System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+ 
+</head>
+<body>
+  <header class="header">
+    <img src="static/r.png" class="left-image" alt="Left Image">
+    <img src="static/r.png" class="right-image" alt="Right Image">
+    <div class="container">
+      <h1>Book Recommender</h1>
+      <nav>
+        <ul>
+          <li><a href="#popular">Popular Books</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#reviews">User Reviews</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="search-section">
+        <h2>Search for a Book</h2>
+        <div class="search-bar">
+          <input type="text" id="searchBox" placeholder="Search for a book..." />
+          <button id="searchButton">Search</button>
+        </div>
+      </section>
+   
+    
+      <section class="popular-books" id="popular">
+        <h2>Top 50 Books</h2>
+        <div class="grid-container" id="bookGrid"></div>
+      </section>
+
+      <section class="recommendations" id="recommendations" style="display: none;">
+        <h2>Recommended Books</h2>
+        <button id="backButton">Back to Popular Books</button>
+        <div class="grid-container" id="recommendationGrid"></div>
+      </section>
+
+      <section class="user-reviews" id="reviews">
+        <h2>User Reviews</h2>
+        <div class="user-reviews">
+          <div class="review">
+            <p>"An amazing selection of books! Highly recommend!"</p>
+            <span>- Jane Doe</span>
+          </div>
+          <div class="review">
+            <p>"Great recommendations based on my reading history."</p>
+            <span>- John Smith</span>
+          </div>
+          <div class="review">
+            <p>"I found several hidden gems through this platform."</p>
+            <span>- Emily Johnson</span>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about">
+          <p>
+            At Book Recommender, we believe that the right book can change your life. Our mission is to connect readers with stories that inspire, educate, and entertain—one recommendation at a time.
+            Powered by intelligent algorithms and a passion for literature, our platform offers personalized book suggestions based on your reading history, preferences, and mood. Whether you're a seasoned bookworm or just getting started, we help you discover titles you'll love across every genre.
+            We’re more than just a recommendation engine—we’re a community of curious minds and passionate readers. Join us and turn the page to your next great read.
+          </p>
+          <h2>
+            Developed by : <br>
+                        G. Karthikeyan <br>          
+                        S.K. Preethan <br>
+          </h2>
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Book Recommender System. All rights reserved.</p>
+    </div>
+  </footer>
+  <div id="loading" style="display: none; text-align: center; margin: 20px;">Loading...</div>
+
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

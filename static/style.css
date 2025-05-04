@@ -1,0 +1,323 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f2f5f9 30%, #dfe3ec 100%);
+    color: #1a1a2e;
+}
+body {
+    /* ... other styles ... */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/984/861/non_2x/abstract-blue-geometric-circles-overlapping-background-with-light-blue-free-vector.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+.header {
+    background: linear-gradient(90deg, #1a1a2e, #35356b);
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px; /* Slightly wider container */
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+/* Center and style the main title */
+h1 {
+    color: #ffffff; /* White for better visibility */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.2em; /* Decreased size for more space */
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #35356b;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 1.8em; /* Decreased size */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* Keep this as is for navigation spacing */
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 1.1rem; /* Slightly smaller font */
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 20px; /* More rounded corners */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Search section styling */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 600px; /* Keep the search bar width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 10px; /* Reduced padding */
+    border: none;
+    width: 100%;
+    font-size: 1rem; /* Smaller font size */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px; /* Reduced padding */
+    background: linear-gradient(90deg, #ff6f61, #ff4a35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.search-bar button:hover {
+    background: linear-gradient(90deg, #ff4a35, #ff2a15);
+    transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+/* Book card grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min width for smaller cards */
+    gap: 15px; /* Reduced gap */
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* Book card styling */
+.book-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* Slightly smaller radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    padding: 15px; /* Reduced padding */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-card:hover {
+    transform: translateY(-5px); /* Less pronounced hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+    max-width: 80%; /* Adjusted for smaller images */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Smaller radius */
+    transition: transform 0.3s;
+}
+
+.book-card:hover img {
+    transform: scale(1.03); /* Smaller scale on hover */
+}
+
+.book-title {
+    font-size: 1.2em; /* Decreased size for better fitting */
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.book-author {
+    color: #555;
+    font-size: 1em; /* Smaller size */
+    margin-bottom: 8px;
+}
+
+.ratings {
+    color: #f0c23b;
+    font-weight: bold;
+    font-size: 1.1em; /* Decreased size */
+}
+
+/* User Reviews section */
+.user-reviews {
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Adjusted radius */
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.review {
+    border-left: 5px solid #ff6f61;
+    padding-left: 10px; /* Reduced padding */
+    margin: 5px 0; /* Reduced margin */
+    font-style: italic;
+    color: #333;
+}
+
+/* About Us section */
+.about {
+    background-color: #e9ecef;
+    border-radius: 10px; /* Adjusted radius */
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.about p {
+    line-height: 1.5; /* Adjusted line height */
+    color: #333;
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 20px 0; /* Reduced padding */
+    text-align: center;
+    font-size: 1em; /* Standard size */
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ff4a35;
+    text-decoration: underline;
+}
+
+#backButton {
+    background: linear-gradient(90deg, #ff4a35, #ff2a15);
+    color: #fff; /* White text for better contrast */
+    padding: 10px 20px; /* Adequate padding for better click area */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* More rounded corners for a softer look */
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: bold; /* Make text bold for emphasis */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Hover state */
+#backButton:hover {
+    background: linear-gradient(90deg, #ff6f61, #ff4a35); /* Lighter gradient on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Focus state for accessibility */
+#backButton:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 112, 85, 0.5); /* Add custom focus outline */
+}
+
+/* Active state for click effect */
+#backButton:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Reduce shadow on click */
+}
+
+/* ... other CSS styles ... */
+
+.header {
+    background: linear-gradient(90deg, #1a1a2e, #35356b);
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position images absolutely */
+}
+
+.header img.left-image {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 90px; /* Adjust the width as needed */
+    height: 90px; /* Adjust the height as needed */
+}
+
+.header img.right-image {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 90px; /* Adjust the width as needed */
+    height: 90px; /* Adjust the height as needed */
+}
+
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns items */
+    margin-top: 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center; /* Centers the stars horizontally */
+}
+
+.star {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    color: gray; /* Default color for stars */
+    transition: color 0.2s; /* Smooth color transition */
+}
+
+.star.selected {
+    color: gold; /* Color for selected stars */
+}
+
+.submit-rating {
+    background: linear-gradient(135deg, #6d5dfc, #7b4fe2); /* Gradient background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Letter spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for smooth effects */
+}
+
+.submit-rating:hover {
+    background: linear-gradient(135deg, #7b4fe2, #6d5dfc); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.submit-rating:active {
+    transform: translateY(0); /* Reset lift effect when active */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
